@@ -15,7 +15,7 @@ public class Principal {
             mayor = numero;
             menor = numero;
 
-            for (int i = 2; i <= 5; i++) {
+            for (int i = 2; i <= 6; i++) {
                 System.out.print("Introduce un número : ");
                 numero = sc.nextInt();
 
