@@ -16,7 +16,7 @@ public class Principal {
         do {
             System.out.print("Introduce el número: ");
             intento = sc.nextInt();
-            contador++;
+            contador= contador +1;
             System.out.println("Intento número " +contador + ": " + intento);
 
             if (intento < numeroSecreto) {
