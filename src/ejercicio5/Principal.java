@@ -28,7 +28,7 @@ public class Principal {
 
         if (contador > 0) {
             double media = suma / contador;
-            System.out.println("La media de las notas es: " + media);
+            System.out.println("La media de las notas introducidas es: " + media);
         } else {
             System.out.println("No se introdujeron notas válidas.");
         }
