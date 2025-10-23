@@ -9,7 +9,8 @@ public class Principal {
         int numeroSecreto = (int) (Math.random() * 100) + 1;
         int intento;
         int contador = 0;
-        String intentos = "";
+        boolean acertar = false;
+
 
         System.out.println("Adivina un número del 1 al 100");
 
@@ -23,13 +24,14 @@ public class Principal {
                 System.out.println("El número es más alto.");
             } else if (intento > numeroSecreto) {
                 System.out.println("El número es más bajo.");
+            }if (numeroSecreto == intento) {
+                acertar = true;
+                System.out.println("¡Has acertado! El número era " + numeroSecreto);
+                System.out.println("Has usado " + contador + " intentos.");
+                System.out.println("Intentos: " + contador);
             }
+        } while (!acertar);
 
-        } while (intento != numeroSecreto);
-
-        System.out.println("¡Has acertado! El número era " + numeroSecreto);
-        System.out.println("Has usado " + contador + " intentos.");
-        System.out.println("Intentos: " + intentos);
 
         for (int i = 0; i < 3; i++) {
             System.out.println("¡FELICIDADES!");
